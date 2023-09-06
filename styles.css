@@ -1,0 +1,40 @@
+/* Define styles for the normal state */
+.hover-text {
+  font-style: oblique; 
+  color: cadetblue;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  }
+  /* Define styles for the hidden list */
+.hidden-list {
+  display: none;
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 1rem;
+  margin: 0;
+  position: absolute;
+  background-color: antiquewhite; /* Optional: Add a background color for better visibility */
+  margin-top: -0.3rem;
+  width: 10%;
+}
+
+.hidden-list-item {
+  font-size: 1.4rem;
+  font-style: oblique; 
+  font-weight: 600;
+  color: cadetblue;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+
+/* Define styles for the list items */
+.hidden-list li {
+  margin: 5px 0;
+}
+
+/* Show the list when the text is hovered */
+.dropdown:hover .hidden-list,
+.hidden-list:hover {
+  display: block;
+}
